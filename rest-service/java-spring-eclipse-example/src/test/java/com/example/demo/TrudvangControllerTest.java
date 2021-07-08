@@ -60,7 +60,7 @@ public class TrudvangControllerTest {
 	public void createCharacterWithName() throws Exception {
 		String testName = "David";
 	    String testCall = "/add-character/" + testName; 
-		this.restTemplate. 
+//		this.restTemplate. 
 	 }
 	    
 }
