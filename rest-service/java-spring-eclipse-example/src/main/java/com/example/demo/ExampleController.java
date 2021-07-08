@@ -3,6 +3,7 @@ package com.example.demo;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import characterEssentials.TrudvangCharacter;
@@ -15,9 +16,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 @RequestMapping("/api/example")
 public class ExampleController {
 	
+	
+	@RequestMapping("/")
+	public @ResponseBody String greeting() {
+		return "Hello, World";
+	}
+	
 	@GetMapping("/hello-world")
 	public ResponseEntity<String> get() {
-		return ResponseEntity.ok("Hello World!");
+		return ResponseEntity.ok("Hello, World");
 	}
 	
 	@GetMapping("/hello-mister/{name}")
