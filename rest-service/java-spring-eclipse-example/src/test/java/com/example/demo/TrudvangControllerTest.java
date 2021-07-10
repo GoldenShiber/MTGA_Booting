@@ -55,7 +55,7 @@ public class TrudvangControllerTest {
 		Assertions.assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/api/example/",
 				String.class)).contains("Hello, World");
 		}
-	 
+	
 	@Test
 	public void createCharacterWithName() throws Exception {
 		String testName = "David";

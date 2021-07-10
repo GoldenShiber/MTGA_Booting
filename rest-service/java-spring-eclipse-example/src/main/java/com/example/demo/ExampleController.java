@@ -10,6 +10,7 @@ import characterEssentials.TrudvangCharacter;
 import status.CharacterList;
 
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
 
 
 @RestController
@@ -39,8 +40,25 @@ public class ExampleController {
 		CharacterList.getInstance().addCharacter(newCharacter);
 	}
 	
+	@GetMapping("/edit-attribute/{name}/{attribute}/{value}")
+	public void editAttribute(@PathVariable String name,@PathVariable String attribute,@PathVariable String value) {
+		TrudvangCharacter editCharacter = CharacterList.getInstance().getCharacter(name);
+		if(editCharacter != null) {
+			editCharacter.getStatMap().put(attribute, Integer.valueOf(value));
+		}
+	}
+	
 	@GetMapping("/get-characters")
 	public ResponseEntity<String> getCharacters() {
 		return ResponseEntity.ok(CharacterList.getInstance().getCharList());
+	}
+	
+	@GetMapping("/getCharacter/{name}")
+	public ResponseEntity<TrudvangCharacter> getCharacter(@PathVariable String name) {
+		TrudvangCharacter editCharacter = CharacterList.getInstance().getCharacter(name);
+		if(editCharacter != null) {
+			return ResponseEntity.ok(editCharacter);
+		}
+		return null;
 	}
 }
