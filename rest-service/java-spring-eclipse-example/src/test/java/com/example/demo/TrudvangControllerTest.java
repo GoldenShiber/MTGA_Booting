@@ -1,30 +1,30 @@
 package com.example.demo;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+//import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
+//import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+//import org.springframework.boot.autoconfigure.SpringBootApplication;
+//import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+//import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
+//import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
-import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.util.Assert;
+//import org.springframework.test.context.junit4.SpringRunner;
+//import org.springframework.test.web.servlet.MockMvc;
+//import org.springframework.util.Assert;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 
-import com.example.demo.ExampleController;
-import com.example.demo.JavaSpringEclipseExampleApplication;
+//import com.example.demo.ExampleController;
+//import com.example.demo.JavaSpringEclipseExampleApplication;
 
 import org.assertj.core.api.Assertions;
 
-import characterEssentials.TrudvangCharacter;
-import status.CharacterList;
-import status.NonStaticCharacterList;
+//import characterEssentials.TrudvangCharacter;
+//import status.CharacterList;
+//import status.NonStaticCharacterList;
 
 //@RunWith(SpringRunner.class)
 //@WebMvcTest(JavaSpringEclipseExampleApplication.class)
@@ -58,8 +58,8 @@ public class TrudvangControllerTest {
 	
 	@Test
 	public void createCharacterWithName() throws Exception {
-		String testName = "David";
-	    String testCall = "/add-character/" + testName; 
+//		String testName = "David";
+//	    String testCall = "/add-character/" + testName; 
 //		this.restTemplate. 
 	 }
 	    

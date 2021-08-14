@@ -6,10 +6,10 @@ import characterEssentials.TrudvangCharacter;
 
 import java.io.File;
 import java.io.IOException;
-import java.math.BigDecimal;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+//import java.math.BigDecimal;
+//import java.util.Arrays;
+//import java.util.HashMap;
+//import java.util.Map;
 
 public class JSONexample {
 
