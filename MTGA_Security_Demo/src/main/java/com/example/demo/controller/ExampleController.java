@@ -53,7 +53,7 @@ public class ExampleController {
 		return ResponseEntity.ok(CharacterList.getInstance().getCharList());
 	}
 	
-	@GetMapping("/getCharacter/{name}")
+	@GetMapping("/get-character/{name}")
 	public ResponseEntity<TrudvangCharacter> getCharacter(@PathVariable String name) {
 		TrudvangCharacter editCharacter = CharacterList.getInstance().getCharacter(name);
 		if(editCharacter != null) {
