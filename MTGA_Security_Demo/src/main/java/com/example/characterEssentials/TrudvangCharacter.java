@@ -15,6 +15,8 @@ import com.example.stats.CombatAbilites;
  * are supposed to be used to simplify actions.
  */
 
+// Implement a builder pattern for this Class
+
 public class TrudvangCharacter {
 	private String name;
 	private com.example.stats.CombatAbilites combatSkills;
